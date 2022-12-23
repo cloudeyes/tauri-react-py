@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "tauri-react",
+    "productName": "tauri-react-py",
     "version": "0.0.0"
   },
   "tauri": {
@@ -57,7 +57,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "tauri-react",
+        "title": "tauri-react-py",
         "width": 800
       }
     ]

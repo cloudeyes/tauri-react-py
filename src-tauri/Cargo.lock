@@ -2771,7 +2771,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tauri-react"
+name = "tauri-react-py"
 version = "0.0.0"
 dependencies = [
  "pyo3",
