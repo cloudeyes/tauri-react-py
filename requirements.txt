@@ -1,0 +1,5 @@
+pydantic
+--no-binary=pydantic
+fastapi
+uvicorn
+psutil
