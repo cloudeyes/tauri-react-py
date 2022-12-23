@@ -1,7 +1,5 @@
-# Tauri + React + Typescript
+# Tauri + React + Typescript + Python
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Tauri 앱 예제입니다. [PyO3](https://github.com/PyO3/pyo3) 로 Python과의 연동을 테스트합니다.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+![](images/demo1.png)

@@ -6,10 +6,18 @@ import reactLogo from './assets/react.svg';
 function App() {
   const [greetMsg, setGreetMsg] = useState('');
   const [name, setName] = useState('');
+  const [rawSvgImage, setRawSvgImage] = useState('');
 
   async function greet() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
     setGreetMsg(await invoke('greet', { name }));
+  }
+
+  async function chart() {
+    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
+    const svg = (await invoke('chart')) as string;
+    console.log('svg:', svg);
+    setRawSvgImage(svg);
   }
 
   return (
@@ -40,9 +48,14 @@ function App() {
           <button type="button" onClick={() => greet()}>
             Greet
           </button>
+          <button type="button" onClick={() => chart()}>
+            Chart
+          </button>
         </div>
       </div>
       <p>{greetMsg}</p>
+      <h3>Matplotlib Chart</h3>
+      <div dangerouslySetInnerHTML={{ __html: rawSvgImage }} />
     </div>
   );
 }
